@@ -5,9 +5,7 @@ services:
     branch: main
     buildCommand: "pip install -r requirements.txt"
     startCommand: "uvicorn main:app --host 0.0.0.0 --port 10000"
-    env:
-      - name: DATABASE_URL
-        fromEnv: DATABASE_URL
     plan: free
-    migrations:
-      run: "alembic upgrade head"
+    runtime: python
+    run:
+      - command: "alembic upgrade head"
