@@ -13,20 +13,17 @@ This route is about creating users and searching user by id.
 
 This route is about login system.
 
-How To Run Locally
+# How To Run Locally
 
 First clone this repo by using following command
-
 
 git clone https://github.com/Izaac04/Taskify-Backend.git
 
 then
 
-
 cd Taskify-Backend
 
 Then install fastapp using all flag like
-
 
 pip install fastapi[all]
 
